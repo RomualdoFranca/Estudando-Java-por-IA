@@ -1,0 +1,30 @@
+package packages.io.file.criacao_arquivos_diretorios;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class CriaArquivosEExcecao {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+
+		// definindo o nome do diretorio
+		String nomeDiretorio = "meus_documentos";
+		// definindo o nome do arquivo
+		String arquivoNome = "list.txt";
+		
+		// File pode ser tanto um caminho de um arquivo como o caminho de uma pasta
+		// define o caminho onde os arquivos e diretorios serao criados
+		File path = new File("C:\\Java IA");
+		
+		//variavel que retorna o valor do metodo de criacao do diretorio
+		boolean success = new File(nomeDiretorio).mkdir();
+		System.out.println(success);
+		
+
+		sc.close();
+	}
+
+}

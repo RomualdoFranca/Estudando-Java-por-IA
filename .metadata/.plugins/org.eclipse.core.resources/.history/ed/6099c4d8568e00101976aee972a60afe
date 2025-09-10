@@ -1,0 +1,10 @@
+package packages.io.file.criacao_arquivos_diretorios;
+
+public class CriaArquivosEExcecao2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

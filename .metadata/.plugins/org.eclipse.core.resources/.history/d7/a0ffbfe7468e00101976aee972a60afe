@@ -1,0 +1,47 @@
+package packages.io.file.criacao_arquivos_diretorios;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class CriaArquivosEExcecao {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		// File pode ser tanto um caminho de um arquivo como o caminho de uma pasta
+		// define o caminho onde o diretorio sera criado
+		File pathDirectory = new File("C:\\Java IA");
+
+		// cria um objeto File que será um diretório
+		File diretorio = new File(pathDirectory, "<meus_documentos");
+
+		// !diretorio.exists(): retorna false se o diretorio não existir no caminho
+		// especificado
+		if (!diretorio.exists()) {
+			// cria o diretorio se ele não existir
+			boolean diretorioCriado = diretorio.mkdir();
+			// mesmo que o diretorio não exista, ainda não é garantido que ele possa ser criado
+			// pode receber um nome com caractere inválido, por exemplo.
+			// por isso a necessidade de outra estrutura condicional
+			if (diretorioCriado) {
+				System.out.println("Diretório criado com sucesso.");
+
+			} else {
+				System.out.println("Falha ao criar o diretório '" + diretorio.getName() + "'");
+
+			}
+		}
+
+		// novo caminho onde os arquivos serao criados
+		File pathFile = new File(pathDirectory + "//" + diretorio);
+
+		// cria um objeto File que será um arquivo
+		File arquivo = new File("list.txt");
+
+
+		sc.close();
+	}
+
+}
