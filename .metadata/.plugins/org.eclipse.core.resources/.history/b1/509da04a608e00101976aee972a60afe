@@ -1,0 +1,51 @@
+package packages.io.file.manipulacaoarquivos.utils;
+
+import java.util.Scanner;
+
+public class LeitorDeConsole {
+	
+	
+	public static String lerNomeArquivo(Scanner sc) {
+		
+		System.out.print("Digite o nome do arquivo:");
+		String nome = sc.nextLine();
+		return nome;
+		
+	}
+	public static String lerNomeDiretorio(Scanner sc) {
+		
+		System.out.print("Digite o nome do diretório:");
+		String nome = sc.nextLine();
+		return nome;
+		
+	}
+	
+	public static int selecionaOpcaoMenu(Scanner sc) {
+		String menu = """
+				Escolha a opção desejada:
+				Criar arquivo: 	 1
+				Apagar arquivo:  2
+				Criar diretório: 3
+				Apagar diretório:4
+				""";
+		System.out.print(menu);
+		int num = 0;
+		boolean ehInteiro = false;
+		
+		do {
+			try {
+				System.out.print("Digite a opção: -> " );
+				num = Integer.parseInt(sc.nextLine());
+				ehInteiro = true;
+				
+			} catch (NumberFormatException e) {
+				System.out.println("Entrada inválida. Tente outra vez.");
+			}
+		} while (!ehInteiro);
+		
+		return num;
+	}
+	
+	
+
+}

@@ -1,0 +1,12 @@
+package packages.io.file.verifica_apaga;
+
+import packages.io.file.manipulacaoarquivos.utils.LeitorDeConsole;
+
+public class VerificaEApaga {
+
+	public static void main(String[] args) {
+
+		System.out.println(LeitorDeConsole.imprimeMenu());;
+	}
+
+}

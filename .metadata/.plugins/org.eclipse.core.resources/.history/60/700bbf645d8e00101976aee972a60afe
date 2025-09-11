@@ -1,0 +1,37 @@
+package packages.io.file.manipulacaoarquivos.utils;
+
+import java.util.Scanner;
+
+public class LeitorDeConsole {
+	
+	
+	public static String lerNomeArquivo(Scanner sc) {
+		
+		System.out.print("Digite o nome do arquivo:");
+		String nome = sc.nextLine();
+		return nome;
+		
+	}
+	public static String lerNomeDiretorio(Scanner sc) {
+		
+		System.out.print("Digite o nome do diretório:");
+		String nome = sc.nextLine();
+		return nome;
+		
+	}
+	
+	public static int selecionaOpcaoMenu(Scanner sc) {
+		String menu = """
+				Escolha a opção desejada:
+				Criar arquivo: 	 1
+				Apagar arquivo:  2
+				Criar diretório: 3
+				Apagar diretório:4
+				""";
+		System.out.println(menu);
+		int num = Integer.parseInt(sc.nextLine());
+		System.out.println("Digite a opção: -> " );
+		return num;
+	}
+
+}

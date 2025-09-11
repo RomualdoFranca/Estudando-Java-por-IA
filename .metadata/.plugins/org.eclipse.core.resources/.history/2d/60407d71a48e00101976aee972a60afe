@@ -1,0 +1,24 @@
+package packages.io.file.verifica_apaga;
+
+import java.util.Scanner;
+
+import packages.io.file.manipulacaoarquivos.service.ManipulacaoDeArquivos;
+import packages.io.file.manipulacaoarquivos.utils.LeitorDeConsole;
+
+public class VerificaEApaga {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		ManipulacaoDeArquivos gerenciador = new ManipulacaoDeArquivos();
+		
+		System.out.println(LeitorDeConsole.selecionaOpcaoMenu(sc));
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

@@ -1,0 +1,5 @@
+package packages.io.file.manipulacaoarquivos.utils;
+
+public class LeitorDeConsole {
+
+}

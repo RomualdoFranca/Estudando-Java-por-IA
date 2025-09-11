@@ -1,0 +1,22 @@
+package packages.io.file.manipulacaoarquivos.service;
+
+public class ManipulacaoDeArquivos {
+	
+	private final String PATH = "C:\\Java IA";
+	private String fileName;
+	private String directoryName;
+	
+	public ManipulacaoDeArquivos() {
+		
+	}
+
+	public ManipulacaoDeArquivos(String fileName, String directoryName) {
+		this.fileName = fileName;
+		this.directoryName = directoryName;
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,10 @@
+package packages.io.file.verifica_apaga;
+
+public class VerificaEApaga {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
