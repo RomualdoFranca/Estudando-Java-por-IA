@@ -17,7 +17,7 @@ public class ManipulacaoDeArquivos {
 
 	// metodo que instancia um objeto do tipo File
 	public File criaDiretorio(String directoryName) {
-		File diretorio = new File(PATH, directoryName);
+		File diretorio = new File(getPATH(), directoryName);
 		return diretorio;
 //		return diretorio.mkdir();
 

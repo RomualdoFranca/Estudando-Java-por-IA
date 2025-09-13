@@ -63,7 +63,6 @@ public class CriaArquivosEExcecao2 {
 		for (File file : listaDiretorios) {
 			System.out.println(file.getName());
 		}
-		System.out.println();
 	}
 
 }

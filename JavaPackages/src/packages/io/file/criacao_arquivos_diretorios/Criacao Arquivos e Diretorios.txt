@@ -1,0 +1,26 @@
+Exercícios para Praticar Manipulação de Arquivos e Diretórios com java.io.File
+
+A seguir, uma lista de exercícios para você praticar os métodos da classe java.io.File com o tratamento de exceções. Lembre-se de utilizar blocos try-catch para lidar com as exceções IOException que os métodos de criação podem lançar.
+
+Exercício 1: Criação de Arquivo e Diretório
+
+Objetivo: Criar um diretório e, em seguida, um arquivo de texto dentro desse diretório.
+
+    Crie uma classe Java chamada CriarArquivoEExcecao.
+
+    Defina uma string para o nome do diretório, por exemplo, "meus_documentos".
+
+    Defina uma string para o nome do arquivo, por exemplo, "lista.txt".
+
+    Crie um objeto File para o diretório.
+
+    Use o método File.mkdir() para criar o diretório. Verifique se a criação foi bem-sucedida.
+
+    Crie um objeto File para o arquivo, combinando o diretório e o nome do arquivo.
+
+    Use o método File.createNewFile() para criar o arquivo.
+
+    Tratamento de Exceção: Envolva o código de criação do arquivo em um bloco try-catch para capturar uma possível IOException. No bloco catch, imprima uma mensagem de erro adequada.
+
+    Após a execução, imprima uma mensagem indicando se o diretório e o arquivo foram criados com sucesso.
+

@@ -1,0 +1,71 @@
+package packages.io.file.criacao_arquivos_diretorios;
+
+import java.io.File;
+import java.io.IOException;
+
+public class CriaArquivosEExcecao2 {
+
+	public static void main(String[] args) {
+
+		String path = "C:\\Java IA";
+
+		File dir = criaDiretorio(path, "pastaMetodo");
+		File[] listaDiretorios = dir.listFiles(File::isDirectory);
+		System.out.println("Diretórios no caminho : " + path );
+		for (File file : listaDiretorios) {
+			System.out.println(file);
+		}
+		
+		if(dir.exists()) {
+			 System.out.println("O diretório '" + dir.getName() + "' foi criado ou já existia.");
+		}else {
+			 System.out.println("Falha ao criar diretório '" + dir.getName());
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+//		if (!dir.exists()) {
+//			boolean criaDir = dir.mkdir();
+//
+//			if (criaDir) {
+//				System.out.println("Diretorio criado");
+//			} else {
+//				System.out.println("Falha ao criar diretorio");
+//			}
+//		}
+
+		File arquivo = new File(dir, "text.md");
+
+		try {
+			boolean criaArquivo = arquivo.createNewFile();
+			if (criaArquivo) {
+				System.out.println("Arquivo criado");
+
+			}else {
+				System.out.println("Falha ao criar arquivo. O arquivo já existe");
+				
+			}
+		} catch (IOException e) {
+			System.out.println("Ocorreu um I/O exception");
+			e.printStackTrace();
+		
+		}
+	}
+	
+	public static File criaDiretorio(String path, String nome) {
+		File diretorio = new File(path, nome);
+		diretorio.mkdir();
+		return diretorio;
+	}
+	
+	
+
+}
