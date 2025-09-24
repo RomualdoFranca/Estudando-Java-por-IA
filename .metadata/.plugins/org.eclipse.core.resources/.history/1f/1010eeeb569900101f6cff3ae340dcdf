@@ -19,7 +19,7 @@ public class ExemploBorderLayout {
 		//container no topo
 		JPanel painelNorte = new JPanel();
 		painelNorte.setBackground(Color.RED);
-		painelNorte.setPreferredSize(new Dimension(0, 100));
+		painelNorte.setPreferredSize(new Dimension(0, 50));
 		
 //		//container na base
 //		JPanel painelSul = new JPanel();

@@ -1,0 +1,28 @@
+package packages.javaswing.JPanel;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class InsereElementosDentroJPanel {
+
+	public static void main(String[] args) {
+
+		JFrame janela = new JFrame();
+		janela.setTitle("Inserindo Elementos no JPanel");
+		janela.setSize(600, 300);
+		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JPanel containerNorth = new JPanel();
+		containerNorth.setBackground(Color.GRAY);
+		containerNorth.setPreferredSize(new Dimension(0, 80));
+		
+		janela.add(containerNorth, BorderLayout.NORTH);
+		
+		janela.setVisible(true);
+	}
+
+}

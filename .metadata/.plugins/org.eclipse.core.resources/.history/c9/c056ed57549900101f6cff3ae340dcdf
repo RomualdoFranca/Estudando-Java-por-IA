@@ -1,0 +1,48 @@
+package packages.javaswing.JPanel;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class ExemploBorderLayout {
+
+	public static void main(String[] args) {
+
+		JFrame janelaBasica = new JFrame();
+		janelaBasica.setTitle("Janela Básica");
+		janelaBasica.setSize(600, 400);
+		janelaBasica.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//"sub-contêiner" do centro
+		JPanel painelCentro = new JPanel();
+		painelCentro.setBackground(Color.GRAY);
+		
+		//container no topo
+		JPanel painelNorte = new JPanel();
+		painelNorte.setBackground(Color.RED);
+		painelNorte.setPreferredSize(new Dimension(0, 50));
+		
+		//container na base
+		JPanel painelSul = new JPanel();
+		painelSul.setBackground(Color.BLUE);
+		painelSul.setPreferredSize(new Dimension(0, 50));
+		
+//		JPanel painelLeste = new JPanel();
+//		painelSul.setBackground(Color.GREEN);
+//		painelSul.setPreferredSize(new Dimension(100, 0));
+//		
+		
+		janelaBasica.add(painelCentro, BorderLayout.CENTER);
+		janelaBasica.add(painelNorte, BorderLayout.NORTH);
+		janelaBasica.add(painelSul, BorderLayout.SOUTH);
+//		janelaBasica.add(painelLeste, BorderLayout.EAST);
+		
+		
+		
+		janelaBasica.setVisible(true);
+	}
+
+}

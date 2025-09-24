@@ -19,31 +19,34 @@ public class ExemploBorderLayout {
 		//container no topo
 		JPanel painelNorte = new JPanel();
 		painelNorte.setBackground(Color.RED);
-		painelNorte.setPreferredSize(new Dimension(0, 100));
+		painelNorte.setPreferredSize(new Dimension(0, 50));
 		
-//		//container na base
-//		JPanel painelSul = new JPanel();
-//		painelSul.setBackground(Color.BLUE);
-//		painelSul.setPreferredSize(new Dimension(0, 50));
-//		
+		//container na base
+		JPanel painelSul = new JPanel();
+		painelSul.setBackground(Color.BLUE);
+		painelSul.setPreferredSize(new Dimension(0, 50));
+		
 //		JPanel painelLeste = new JPanel();
-//		painelLeste.setBackground(Color.GREEN);
-//		painelLeste.setPreferredSize(new Dimension(100, 0));
+//		painelSul.setBackground(Color.GREEN);
+//		painelSul.setPreferredSize(new Dimension(100, 0));
+		
+		JPanel painelLeste = new JPanel();
+        painelLeste.setBackground(Color.GREEN);
+        painelLeste.setPreferredSize(new Dimension(100, 0));
+		
+		JPanel painelOeste = new JPanel();
+        painelOeste.setBackground(Color.YELLOW);
+        painelOeste.setPreferredSize(new Dimension(100, 0));
 //		
-////		
-//		JPanel painelOeste = new JPanel();
-//        painelOeste.setBackground(Color.YELLOW);
-//        painelOeste.setPreferredSize(new Dimension(100, 0));
-////		
 		//"sub-contêiner" do centro
 		JPanel painelCentro = new JPanel();
 		painelCentro.setBackground(Color.GRAY);
 		
 		
 		janelaBasica.add(painelNorte, BorderLayout.NORTH);
-//		janelaBasica.add(painelSul, BorderLayout.SOUTH);
-//		janelaBasica.add(painelLeste, BorderLayout.EAST);
-//		janelaBasica.add(painelOeste, BorderLayout.WEST);
+		janelaBasica.add(painelSul, BorderLayout.SOUTH);
+		janelaBasica.add(painelLeste, BorderLayout.EAST);
+		janelaBasica.add(painelOeste, BorderLayout.WEST);
 		janelaBasica.add(painelCentro, BorderLayout.CENTER);
 		
 		
