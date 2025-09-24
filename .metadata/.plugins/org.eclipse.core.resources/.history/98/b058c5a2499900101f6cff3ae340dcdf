@@ -1,0 +1,10 @@
+package packages.javaswing.JFrame;
+
+public class JanelaBasica {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

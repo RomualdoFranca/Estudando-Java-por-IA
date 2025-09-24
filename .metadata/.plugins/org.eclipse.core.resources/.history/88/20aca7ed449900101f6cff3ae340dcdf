@@ -1,0 +1,28 @@
+package packages.javaswing.teste;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class JanelaSwingSimples {
+
+	public static void main(String[] args) {
+
+		// Cria a janela (frame)
+        JFrame frame = new JFrame("Minha Primeira Janela Swing");
+
+        // Define o que acontece quando o botão de fechar é clicado
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        // Define o tamanho da janela (largura, altura)
+        frame.setSize(400, 300);
+        
+     // Cria o rótulo (label) com a mensagem de texto
+        JLabel label = new JLabel("Olá, Mundo! Este é um rótulo do Swing.");
+        // Adiciona o rótulo à janela
+        frame.add(label);
+        
+        
+        // Deixa a janela visível
+        frame.setVisible(true);
+	}
+
+}

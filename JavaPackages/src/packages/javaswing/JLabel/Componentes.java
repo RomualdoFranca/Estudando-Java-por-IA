@@ -1,0 +1,30 @@
+package packages.javaswing.JLabel;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Componentes {
+
+	public static void main(String[] args) {
+
+		JFrame janelaBasica = new JFrame();
+		janelaBasica.setTitle("Janela Básica");
+		janelaBasica.setSize(500, 300);
+		janelaBasica.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//Definir como os componentes serão organizados na sua janela
+		//lembrar que esse metodo recebe como parametro um objeto do tipo FlowLayout()
+		//o método deve ser aplicado a variavel de referencia da janela
+		janelaBasica.setLayout(new FlowLayout());
+		
+		// Instancia um objeto que exiba um texto simples na sua janela.
+		JLabel msg = new JLabel("Digite algo");
+		
+		janelaBasica.add(msg);
+		
+		janelaBasica.setVisible(true);
+	}
+
+}

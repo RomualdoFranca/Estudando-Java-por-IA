@@ -24,6 +24,8 @@ public class CriaArquivosEExcecao2 {
 			e.printStackTrace();
 		}
 
+		
+		
 	}
 
 	public static File criaDiretorio(File path, String nome) {
@@ -65,5 +67,6 @@ public class CriaArquivosEExcecao2 {
 		}
 		System.out.println();
 	}
+	
 
 }

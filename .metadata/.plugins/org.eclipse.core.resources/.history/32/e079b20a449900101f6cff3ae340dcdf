@@ -1,0 +1,61 @@
+package packages.javaswing.teste;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class WelcomeSwing {
+
+    public static void main(String[] args) {
+        // Criamos a janela (o "frame") principal
+        JFrame frame = new JFrame("Boas-Vindas ao Swing!");
+        frame.setSize(400, 200); // Define o tamanho da janela
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Ação ao fechar a janela
+        frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS)); // Define o layout para organizar os componentes
+
+        // Criamos o campo de texto para o nome do usuário
+        JTextField campoNome = new JTextField(20);
+        campoNome.setMaximumSize(campoNome.getPreferredSize()); // Limita o tamanho do campo de texto
+
+        // Criamos o rótulo para a mensagem de boas-vindas (inicia vazio)
+        JLabel mensagem = new JLabel("Digite seu nome e clique no botão.");
+
+        // Criamos o botão
+        JButton botao = new JButton("Mostrar Boas-Vindas");
+
+        // Adicionamos a funcionalidade ao botão
+        botao.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Pega o texto do campo
+                String nome = campoNome.getText();
+                // Verifica se o campo não está vazio
+                if (!nome.trim().isEmpty()) {
+                    // Atualiza o texto do rótulo
+                    mensagem.setText("Olá, " + nome + "! Bem-vindo(a) ao mundo do Swing!");
+                } else {
+                    mensagem.setText("Por favor, digite seu nome.");
+                }
+            }
+        });
+
+        // Adicionamos os componentes à janela
+        frame.add(Box.createVerticalStrut(20)); // Espaço vertical
+        frame.add(campoNome);
+        frame.add(Box.createVerticalStrut(10)); // Espaço vertical
+        frame.add(botao);
+        frame.add(Box.createVerticalStrut(20)); // Espaço vertical
+        frame.add(mensagem);
+        
+        // Centraliza a janela na tela
+        frame.setLocationRelativeTo(null);
+        // Deixa a janela visível
+        frame.setVisible(true);
+    }
+}

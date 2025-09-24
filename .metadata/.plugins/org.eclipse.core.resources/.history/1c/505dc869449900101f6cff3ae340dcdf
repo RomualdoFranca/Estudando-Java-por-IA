@@ -1,0 +1,22 @@
+package packages.javaswing.teste;
+
+import javax.swing.JFrame;
+
+public class JanelaSwingSimples {
+
+	public static void main(String[] args) {
+
+		// Cria a janela (frame)
+        JFrame frame = new JFrame("Minha Primeira Janela Swing");
+
+        // Define o que acontece quando o botão de fechar é clicado
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Define o tamanho da janela (largura, altura)
+        frame.setSize(400, 300);
+
+        // Deixa a janela visível
+        frame.setVisible(true);
+	}
+
+}
