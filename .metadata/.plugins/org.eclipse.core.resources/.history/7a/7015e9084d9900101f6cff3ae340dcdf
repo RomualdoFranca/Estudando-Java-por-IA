@@ -15,7 +15,7 @@ public class Componentes {
 
 		JFrame janelaBasica = new JFrame();
 		janelaBasica.setTitle("Janela Básica");
-		janelaBasica.setSize(600, 400);
+		janelaBasica.setSize(600, 300);
 		janelaBasica.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		//Definir como os componentes serão organizados na sua janela
@@ -26,19 +26,18 @@ public class Componentes {
 //		janelaBasica.setLayout(new GridLayout());
 		
 		// Instancia um objeto que exiba um texto simples na sua janela.
-//		JLabel msg = new JLabel("Digite algo");
+		JLabel msg = new JLabel("Digite algo");
+		//adiciona ao rotulo do obj JLabel dentro da janela
+		
 		//campo de texto onde o usuário possa digitar com o tamanho de 20 colunas
-//		JTextField input = new JTextField(20);
-//		JButton botao = new JButton("OK");
+		JTextField input = new JTextField(20);
 		
-//		janelaBasica.add(msg);
-//		janelaBasica.add(input);
-//		janelaBasica.add(botao);
+		JButton botao = new JButton("OK");
 		
+		janelaBasica.add(msg);
+		janelaBasica.add(input);
+		janelaBasica.add(botao);
 		
-		
-		
-//		
 		janelaBasica.setVisible(true);
 	}
 
