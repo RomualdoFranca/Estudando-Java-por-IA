@@ -1,0 +1,20 @@
+package packages.javaswing.GridLayout;
+
+import javax.swing.JFrame;
+
+public class ExemploGridLayout {
+
+	public static void main(String[] args) {
+
+		JFrame frame = new JFrame();
+		frame.setTitle("ExemploGridLayout ");
+		frame.setSize(400, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		frame.setLocationRelativeTo(null);
+		frame.setResizable(false);
+		frame.setVisible(true);
+	}
+
+}

@@ -1,0 +1,21 @@
+package packages.javaswing.GridLayout;
+
+import javax.swing.JFrame;
+
+public class GradeNoJPanel {
+
+	public static void main(String[] args) {
+
+		JFrame window = new JFrame();
+		window.setTitle("JPanel com Grade");
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setSize(600, 500);
+		
+		
+		window.setResizable(false);
+		window.setLocationRelativeTo(null);
+		window.setVisible(true);
+		
+	}
+
+}
