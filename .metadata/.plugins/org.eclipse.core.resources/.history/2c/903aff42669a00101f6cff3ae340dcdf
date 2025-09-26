@@ -29,6 +29,11 @@ public class GradeNoJPanel {
 		
 		window.add(painelDaGrade, BorderLayout.CENTER);
 		
+		
+		
+		
+		
+		
 		window.setResizable(false);
 		window.setLocationRelativeTo(null);
 		window.setVisible(true);

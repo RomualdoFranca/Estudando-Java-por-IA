@@ -1,0 +1,5 @@
+package packages.IoCandID.licao02;
+
+public class MotorEletrico {
+
+}

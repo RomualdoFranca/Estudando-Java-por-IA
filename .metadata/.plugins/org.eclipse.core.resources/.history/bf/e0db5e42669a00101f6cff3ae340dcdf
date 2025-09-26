@@ -1,0 +1,5 @@
+package packages.IoCandID.licao01;
+
+public class Notificador {
+
+}
