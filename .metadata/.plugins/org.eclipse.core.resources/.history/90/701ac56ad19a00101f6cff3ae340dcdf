@@ -1,0 +1,5 @@
+package packages.compareTo;
+
+public interface Comparable {
+
+}

@@ -1,0 +1,35 @@
+package packages.compareTo;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+public class Application {
+
+	public static void main(String[] args) {
+
+
+		List<Produto> listaProduto = new ArrayList<Produto>();
+		listaProduto.add(new Produto("açucar", 2.75));
+		listaProduto.add(new Produto("fubá", 1.45));
+		listaProduto.add(new Produto("farinha", 6.88));
+		
+		System.out.println("Lista sem ordenação");
+		System.out.println(listaProduto);
+//		for (Produto produto : listaProduto) {
+//			System.out.println(produto);
+//		}
+		
+		System.out.println("Lista com ordenação");
+		Collections.sort(listaProduto);
+		
+		for (Produto produto : listaProduto) {
+			System.out.println(produto);
+		}
+		
+
+		
+	}
+
+}

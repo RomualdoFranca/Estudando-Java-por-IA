@@ -1,0 +1,21 @@
+package packages.compareTo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Application {
+
+	public static void main(String[] args) {
+
+
+		List<Produto> listaProduto = new ArrayList<Produto>();
+		listaProduto.add(new Produto("fubá", 1.45));
+		listaProduto.add(new Produto("açucar", 2.75));
+		listaProduto.add(new Produto("farinha", 6.88));
+		
+		for (Produto produto : listaProduto) {
+			System.out.println(produto.compareTo(produto));
+		}
+	}
+
+}
